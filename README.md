@@ -16,3 +16,11 @@ ascnkhachoc
 asm,acnoia
 ad/, ampa
 ascmasco'ih
+ ,ncsolvjwlv
+ vklnvm;rv
+ lknre;re
+ rg;lmr',
+ lweinwmo
+ reljbe;
+ er.,erm;
+ 

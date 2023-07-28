@@ -1,0 +1,22 @@
+provider "aws" {
+  region = "us-west-2" # Set your desired AWS region here
+}
+
+resource "aws_db_instance" "example_rds" {
+  identifier             = "example-rds-instance"
+  engine                 = "mysql"
+  instance_class         = "db.t2.micro"
+  allocated_storage      = 20
+  storage_type           = "gp2"
+  username               = "db_user"
+  password               = "db_password"
+  db_name                = "db_example"
+  multi_az               = false
+  publicly_accessible    = false
+  backup_retention_period = 7
+  vpc_security_group_ids = [aws_security_group.example_sg.id] # Replace example_sg with your security group name
+
+  tags = {
+    Name = "ExampleRDSInstance"
+  }
+}
